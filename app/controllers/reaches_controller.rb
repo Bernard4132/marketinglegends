@@ -69,6 +69,12 @@ class ReachesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def reach_params
+    if params[:reach][:websitepurpose] != nil
+       params[:reach][:websitepurpose] = params[:reach][:websitepurpose].join(',')
+    end
+    if params[:reach][:objectiveachieve] != nil
+       params[:reach][:objectiveachieve] = params[:reach][:objectiveachieve].join(',')
+    end
       params.require(:reach).permit(:whatyouwant, :howlongrun, :triedonline, :everspentmoney, :runningwebsite, :websitepurpose, :objectiveachieve, :investatleast, :name, :phonenumber, :whatsappnumber, :email)
     end
 end

@@ -13,16 +13,16 @@
 
   <div class="form-group">
     <label style="font-weight: 600;">What do you want to do online with your business or organization?</label>
-    <span style="color: #d9b806; font-size: 12px;"><br>Eg. Build a website to get clients for my business / Build a website to get customers to by my product / Build a website to get support for my organization (NGO, School etc)</span>
+    <span style="color: #d9b806; font-size: 12px;"><br>Eg. Build a website to get clients for my business / Build a website to get customers to for my product / Build a website to get support for my organization (NGO, School etc)</span>
     <%= f.text_area :whatyouwant, :class => "form-control", :rows => "3", :placeholder => "What do you want to do .."  %>
   </div>
 
   <div class="form-group">
-    <label style="font-weight: 600;">How long have you been running your business?</label><br>
+    <label style="font-weight: 600;">How long have you been running your business / organization?</label><br>
     <input type="radio" name="reach[howlongrun]" id="reach_howlongrun" value="1 Year or less"> 1 Year or less
   <input type="radio" name="reach[howlongrun]" id="reach_howlongrun" value="1 - 2 years" style="margin-left: 10px;"> 1 - 2 years
   <input type="radio" name="reach[howlongrun]" id="reach_howlongrun" value="3 - 4 years" style="margin-left: 10px;"> 3 - 4 years
-  <input type="radio" name="reach[howlongrun]" id="reach_howlongrun" value="More than years" style="margin-left: 10px;"> More than 5 years
+  <input type="radio" name="reach[howlongrun]" id="reach_howlongrun" value="More than years" style="margin-left: 10px;"> 5 or more years
   </div>
 
   <div class="form-group">
@@ -38,7 +38,7 @@
   </div>
 
   <div class="form-group">
-    <label style="font-weight: 600;">Do you have running website?</label><br>
+    <label style="font-weight: 600;">Do you have a website running?</label><br>
     <input type="radio" name="reach[runningwebsite]" id="reach_runningwebsite" value="Yes"> Yes
   <input type="radio" name="reach[runningwebsite]" id="reach_runningwebsite" value="No" style="margin-left: 10px;"> No
   </div>
@@ -46,7 +46,7 @@
   <div class="form-group">
     <label style="font-weight: 600;">What is the website's purpose and what is your objective for having a website?</label><br>
     <input type="checkbox" name="reach[websitepurpose][]" id="reach_websitepurpose_1" 
-    value="To Make Sales"> To make sales<br>
+    value="To Make Sales"> To make sales / get clients for my business<br>
     <input type="checkbox" name="reach[websitepurpose][]" id="reach_websitepurpose_2" 
     value="To build an audience I can consistently market to."> To build an audience I can consistently market to.<br>
     <input type="checkbox" name="reach[websitepurpose][]" id="reach_websitepurpose_3" 
@@ -79,7 +79,7 @@
   </div>
   <br>
   <hr>
-  <h3>Contact information</h3>
+  <h4>Your contact information</h4>
   <br>
   <div class="form-group">
     <label style="font-weight: 500;">Name</label>
@@ -102,6 +102,6 @@
   </div>
 
   <div class="form-group">
-    <%= f.submit %>
+    <%= f.submit "Submit", :class => "btn btn-lg btn-success" %>
   </div>
 <% end %>

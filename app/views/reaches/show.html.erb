@@ -1,64 +1,31 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Whatyouwant:</strong>
-  <%= @reach.whatyouwant %>
-</p>
 
-<p>
-  <strong>Howlongrun:</strong>
-  <%= @reach.howlongrun %>
-</p>
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-md-6 offset-md-3">
+            <style type="text/css">
+        
+        #sidebar {
+          display: none;
+          }
+          
+      </style>
 
-<p>
-  <strong>Triedonline:</strong>
-  <%= @reach.triedonline %>
-</p>
-
-<p>
-  <strong>Everspentmoney:</strong>
-  <%= @reach.everspentmoney %>
-</p>
-
-<p>
-  <strong>Runningwebsite:</strong>
-  <%= @reach.runningwebsite %>
-</p>
-
-<p>
-  <strong>Websitepurpose:</strong>
-  <%= @reach.websitepurpose %>
-</p>
-
-<p>
-  <strong>Objectiveachieve:</strong>
-  <%= @reach.objectiveachieve %>
-</p>
-
-<p>
-  <strong>Investatleast:</strong>
-  <%= @reach.investatleast %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @reach.name %>
-</p>
-
-<p>
-  <strong>Phonenumber:</strong>
-  <%= @reach.phonenumber %>
-</p>
-
-<p>
-  <strong>Whatsappnumber:</strong>
-  <%= @reach.whatsappnumber %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @reach.email %>
-</p>
-
-<%= link_to 'Edit', edit_reach_path(@reach) %> |
-<%= link_to 'Back', reaches_path %>
+      <br><br><br><br><br>
+      <p style="text-align: center;">
+        <img src="https://res.cloudinary.com/nikasemo/image/upload/v1576052324/smiling-emoticon-square-face_eky0ti.png">
+      </p>
+      <h3 style="text-align: center;">Thank you for filling our Form, <%= @reach.name %>!</h3>
+      <br>
+      <p style="text-align: center; color: #4A4A4A; text-align: justify;">Welcome to Marketing Legends! 
+        Just as we have been able to find you on the internet as a potential customer for our business, in that same regard, there are several hundreds or even thousands of customers and key partners you can find using the internet! The Marketing Legends will help you with this. Your website is of no practical use if there is no practical and proven way to find customers to visit it everyday..
+        <br><br>
+      We want to welcome you with a short orientation on how to use this powerful tool called the internet for your business / organization! We will get back to you soon!</p>
+      <br>
+      <p style="text-align: center;">
+        <a href="/reaches/new" class="btn btn-primary">Go Back</a>
+      </p>
+      <br><br><br>
+    </div>
+  </div>
+</div>
